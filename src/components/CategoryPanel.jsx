@@ -5,7 +5,7 @@ import { Button } from "@mui/material";
 import { FaRegPlusSquare } from "react-icons/fa";
 import "./categoryPanel.css";
 import { Link } from "react-router-dom";
-import { useEffect, useState } from "react";
+import { useState } from "react";
 import { FaRegMinusSquare } from "react-icons/fa";
 
 function CategoryPanel({ isOpenCategoryPanel, setIsOpenCategoryPanel }) {
@@ -36,7 +36,10 @@ function CategoryPanel({ isOpenCategoryPanel, setIsOpenCategoryPanel }) {
     <Box sx={{ width: 250 }} role="presentation" className="categoryPanel">
       <h2 className="text-[16px] px-5 py-3 font-[500] flex items-center justify-between border-b-[2px]">
         Shop by categories{" "}
-        <IoClose onClick={toggleDrawer(false)} className="cursor-pointer text-[20px]" />
+        <IoClose
+          onClick={toggleDrawer(false)}
+          className="cursor-pointer text-[20px]"
+        />
       </h2>
 
       <div className="scroll">

@@ -33,12 +33,18 @@ function Header() {
             <div className="col2 flex items-center justify-end">
               <ul className="flex items-center gap-3">
                 <li className="list-none">
-                  <Link to={"/help-center"} className="text-[13px] link font-[500] transition">
+                  <Link
+                    to={" /help-center"}
+                    className="text-[13px] link font-[500] transition"
+                  >
                     Help center
                   </Link>
                 </li>
                 <li className="list-none">
-                  <Link to={"/order-tracking"} className="text-[13px] link font-[500] transition">
+                  <Link
+                    to={"/order-tracking"}
+                    className="text-[13px] link font-[500] transition"
+                  >
                     Order tracking
                   </Link>
                 </li>
@@ -52,7 +58,11 @@ function Header() {
         <div className="container flex items-center justify-between">
           <div className="col1 w-[25%]">
             <Link to={"/"}>
-              <img src={"/logoHeader.png"} alt="Image" />
+              <img
+                className="h-[80px] w-[170px]"
+                src={"/logoHeader.png"}
+                alt="Image"
+              />
             </Link>
           </div>
           <div className="col2 w-[45%]">
@@ -61,11 +71,17 @@ function Header() {
           <div className="col3 w-[30%] flex items-center pl-7">
             <ul className="flex items-center gap-3 justify-end w-full">
               <li className="list-none">
-                <Link to={"/login"} className="link transition text-[15px] font-[500]">
+                <Link
+                  to={"/login"}
+                  className="link transition text-[15px] font-[500]"
+                >
                   Login
                 </Link>{" "}
                 &nbsp; | &nbsp;{" "}
-                <Link className="link transition text-[15px] font-[500]" to={"/register"}>
+                <Link
+                  className="link transition text-[15px] font-[500]"
+                  to={"/register"}
+                >
                   Register
                 </Link>
               </li>

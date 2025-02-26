@@ -1,0 +1,207 @@
+import { Swiper, SwiperSlide } from "swiper/react";
+
+// Import Swiper styles
+import "swiper/css";
+import "swiper/css/navigation";
+
+import { Navigation } from "swiper/modules";
+import { Link } from "react-router-dom";
+
+function HomeCategorySlider() {
+  return (
+    <div className="homeCategorySlider py-8 pt-4">
+      <div className="container">
+        <Swiper
+          slidesPerView={10}
+          spaceBetween={30}
+          navigation={true}
+          modules={[Navigation]}
+          className="mySwiper"
+        >
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+          <SwiperSlide>
+            <Link to={"/"}>
+              <div className="item py-7 px-3 bg-white rounded-sm text-center flex items-center justify-center flex-col">
+                <img
+                  src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=270/layout-engine/2022-12/paan-corner_web.png"
+                  alt=""
+                  className="w-[60px]"
+                />
+                <h3 className="text-[15px] font-[500] mt-3">Pan corner</h3>
+              </div>
+            </Link>
+          </SwiperSlide>
+        </Swiper>
+      </div>
+    </div>
+  );
+}
+
+export default HomeCategorySlider;

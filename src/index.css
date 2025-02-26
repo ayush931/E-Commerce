@@ -15,8 +15,21 @@
 body {
   font-family: "Montserrat", serif;
   font-optical-sizing: auto;
-  background: #f6f6f6;
+  background: white;
   color: rgba(0, 0, 0, 0.9);
+  overflow-x: hidden;
+}
+
+.btn-org {
+  background: #287c2c !important;
+  color: white !important;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 11px 20px !important;
+}
+
+::-webkit-scrollbar {
+  display: none !important;
 }
 
 .link:hover {
@@ -38,7 +51,141 @@ nav button:hover {
   background: none;
 }
 
-img {
-  height: 80px;
-  width: 150px;
+.mySwiper {
+  overflow: inherit !important;
+}
+
+.swiper-button-prev,
+.swiper-button-next {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  border-radius: 100%;
+  background: #fff;
+  width: 45px;
+  height: 45px;
+  min-width: 45px;
+  box-shadow:
+    0 1px 3px #0000001f,
+    0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev::after,
+.swiper-button-next::after {
+  font-size: 22px !important;
+  color: #000;
+}
+
+.mySwiper .swiper-button-prev:hover,
+.mySwiper .swiper-button-next:hover {
+  background: #287c2c !important;
+}
+
+.mySwiper .swiper-button-prev:hover::after,
+.mySwiper .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.homeCategorySlider {
+  overflow: inherit !important;
+}
+
+.homeCategorySlider .swiper-button-prev,
+.homeCategorySlider .swiper-button-next {
+  width: 30px;
+  height: 30px;
+  min-width: 30px;
+}
+
+.homeCategorySlider .swiper-button-prev::after,
+.homeCategorySlider .swiper-button-next::after {
+  font-size: 16px !important;
+}
+
+.homeCategorySlider .item {
+  border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+.homeCategorySlider .swiper-button-prev:hover,
+.homeCategorySlider .swiper-button-next:hover {
+  background: #287c2c !important;
+}
+
+.homeCategorySlider .swiper-button-prev:hover::after,
+.homeCategorySlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.smallButton .swiper-button-prev,
+.smallButton .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 55% !important;
+}
+
+.smallButton .swiper-button-prev::after,
+.smallButton .swiper-button-next::after {
+  font-size: 18px !important;
+  color: #000;
+}
+
+.smallButton .swiper-button-prev:hover,
+.smallButton .swiper-button-next:hover {
+  background: #287c2c !important;
+}
+
+.smallButton .swiper-button-prev:hover::after,
+.smallButton .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+.MuiTabs-indicator {
+  background-color: #287c2c !important;
+}
+
+.MuiTab-textColorPrimary.Mui-selected {
+  color: #287c2c !important;
+}
+
+.productSlider .swiper-wrapper {
+  padding: 15px;
+}
+
+.productItemSlider .swiper-button-prev,
+.productItemSlider .swiper-button-next {
+  width: 30px !important;
+  height: 30px !important;
+  min-width: 30px !important;
+  top: 40% !important;
+}
+
+.productItemSlider .swiper-button-prev::after,
+.productItemSlider .swiper-button-next::after {
+  font-size: 18px !important;
+  color: #000;
+}
+
+.productItemSlider .swiper-button-prev:hover,
+.productItemSlider .swiper-button-next:hover {
+  background: #287c2c !important;
+}
+
+.productItemSlider .swiper-button-prev:hover::after,
+.productItemSlider .swiper-button-next:hover::after {
+  color: #fff !important;
+}
+
+footer form input::placeholder {
+  font-size: 14px;
+}
+
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.Mui-checked,
+.css-imrjgg-MuiButtonBase-root-MuiCheckbox-root.MuiCheckbox-indeterminate {
+  color: #287c2c !important;
+}
+
+.MuiFormControlLabel-label {
+  font-size: 13px !important;
+  color: rgba(0, 0, 0, 0.8);
 }
