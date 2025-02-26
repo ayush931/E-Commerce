@@ -5,14 +5,13 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
-import { Link } from "react-router-dom";
 import ProductItem from "./ProductItem";
 
-function ProductSlider({ items }) {
+function ProductSlider(props) {
   return (
     <div className="productSlider py-3">
       <Swiper
-        slidesPerView={items}
+        slidesPerView={props.items}
         spaceBetween={10}
         navigation={true}
         modules={[Navigation]}

@@ -17,6 +17,8 @@ import { Navigation } from "swiper/modules";
 import Blogitem from "../components/BlogItem";
 import Footer from "../components/Footer";
 import FooterBanner from "../components/FooterBanner";
+import HomeSliderv2 from "../components/HomeSliderv2";
+import BannerBoxv2 from "../components/BannerBoxv2";
 
 function Home() {
   const [value, setValue] = useState(0);
@@ -26,9 +28,20 @@ function Home() {
   };
 
   return (
-    <div className="bg-white">
+    <div className="bg-[#ffffff]">
       <HomeSlider />
       <HomeCategorySlider />
+      <section className="py-6">
+        <div className="container item flex gap-5">
+          <div className="part1 w-[70%]">
+            <HomeSliderv2 />
+          </div>
+          <div className="part2 gap-5 w-[30%] flex items-center justify-between flex-col">
+            <BannerBoxv2 info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"} />
+            <BannerBoxv2 info="right" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"} />
+          </div>
+        </div>
+      </section>
       <section className="bg-white py-8">
         <div className="container">
           <div className="flex items-center justify-between">
@@ -85,7 +98,7 @@ function Home() {
             </div>
           </div>
           <div className="bg-white">
-            <AdsBannerSlider items={4} />
+            <AdsBannerSlider items={3} />
           </div>
         </div>
       </section>
@@ -96,7 +109,7 @@ function Home() {
             Do not miss the current offers until the end of Season
           </p>
           <ProductSlider items={6} />
-          <AdsBannerSlider items={3} />
+          <AdsBannerSlider items={4} />
         </div>
       </section>
       <section className="py-5 pt-0 bg-white">
@@ -106,18 +119,18 @@ function Home() {
             Do not miss the current offers until the end of Season
           </p>
           <ProductSlider items={6} />
-          <AdsBannerSlider items={2} />
+          <AdsBannerSlider items={5} />
         </div>
       </section>
       <section className="bg-white py-5 pt-0 blogSection">
         <div className="container">
           <h2 className="text-[20px] font-[600] mb-4">From the Blog</h2>
           <Swiper
-            slidesPerView={4}
+            slidesPerView={5}
             spaceBetween={30}
             navigation={true}
             modules={[Navigation]}
-            className="mySwiper"
+            className="blogItem"
           >
             <SwiperSlide>
               <Blogitem />
@@ -149,7 +162,7 @@ function Home() {
         <hr />
       </section>
       <Footer />
-      <br className="bg-white" />
+      <br />
     </div>
   );
 }

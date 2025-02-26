@@ -12,7 +12,7 @@ function ProductItem() {
       <div className="productItem rounded-md overflow-hidden border-2 border-[#e4f0d4] shadow-lg group-hover:scale-105 transition-all duration-500">
         <div className="imageWrapper w-[100%] rounded-md relative group">
           <Link to={"/"}>
-            <div className="img h-[50%] overflow-hidden">
+            <div className="img h-[225px] relative overflow-hidden">
               <img
                 src="https://www.jiomart.com/images/product/original/rvkac6kwsu/buynewtrend-light-blue-solid-women-denim-jacket-product-images-rvkac6kwsu-0-202311190356.jpg?im=Resize=(600,750)"
                 alt=""
@@ -20,7 +20,7 @@ function ProductItem() {
               <img
                 src="https://www.jiomart.com/images/product/original/rvkac6kwsu/buynewtrend-light-blue-solid-women-denim-jacket-product-images-rvkac6kwsu-3-202311190356.jpg?im=Resize=(600,750)"
                 alt=""
-                className="w-full absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105"
+                className="w-full h-auto object-cover absolute left-0 top-0 opacity-0 group-hover:opacity-100 transition-all duration-700 group-hover:scale-105"
               />
             </div>
           </Link>

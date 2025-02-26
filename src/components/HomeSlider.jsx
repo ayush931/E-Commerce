@@ -14,6 +14,7 @@ export default function HomeSlider() {
     <div className="homeslider py-3">
       <div className="container">
         <Swiper
+          loop={true}
           autoplay={{
             delay: 2500,
             disableOnInteraction: false,

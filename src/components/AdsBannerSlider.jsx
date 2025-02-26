@@ -4,18 +4,23 @@ import { Swiper, SwiperSlide } from "swiper/react";
 import "swiper/css";
 import "swiper/css/navigation";
 
-import { Navigation } from "swiper/modules";
+import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import BannerBox from "./BannerBox";
 
-function AdsBannerSlider({ items }) {
+function AdsBannerSlider(props) {
   return (
     <div className="py-5 w-full">
       <Swiper
-        slidesPerView={items}
+        loop={true}
+        autoplay={{
+          delay: 1500,
+          disableOnInteraction: false,
+        }}
+        slidesPerView={props.items}
         spaceBetween={30}
         navigation={true}
-        modules={[Navigation]}
+        modules={[Navigation, Autoplay]}
         className="smallButton"
       >
         <SwiperSlide>

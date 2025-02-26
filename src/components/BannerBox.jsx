@@ -1,7 +1,7 @@
-function BannerBox({ img }) {
+function BannerBox(props) {
   return (
     <div className="bannerBox inline-block">
-      <img src={img} alt="Hello" />
+      <img src={props.img} alt="Hello" />
     </div>
   );
 }
