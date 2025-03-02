@@ -13,8 +13,8 @@ function Footer() {
   return (
     <>
       <footer className="py-6 bg-[#e4f0d4]">
-        <div className="container">
-          <div className="footer flex py-6">
+        <div>
+          <div className="footer flex py-6 container pt-3">
             <div className="part1 w-[25%] border-r border-[rgba(0,0,0,0.2)]">
               <h2 className="text-[18px] font-[600]">Contact us</h2>
               <p className="text-[13px] font-[400] pb-4 pt-4">
@@ -129,7 +129,7 @@ function Footer() {
           </div>
         </div>
       </footer>
-      <div className="bottomStrip border-t border-[rgba(0,0,0,0.3)] bg-white mt-4">
+      <div className="bottomStrip border-t border-[rgba(0,0,0,0.3)] bg-white mt-4 pt-2">
         <div className="container flex items-center justify-between pt-4">
           <ul className="flex items-center gap-3">
             <li className="list-none">
@@ -181,6 +181,7 @@ function Footer() {
           <p className="text-[13px]">Copyright&#169; 2025 - ShopU Store </p>
         </div>
       </div>
+      <br />
     </>
   );
 }

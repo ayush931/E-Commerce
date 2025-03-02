@@ -18,7 +18,7 @@ function AdsBannerSlider(props) {
           disableOnInteraction: false,
         }}
         slidesPerView={props.items}
-        spaceBetween={30}
+        spaceBetween={10}
         navigation={true}
         modules={[Navigation, Autoplay]}
         className="smallButton"

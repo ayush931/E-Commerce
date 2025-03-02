@@ -15,10 +15,10 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import Blogitem from "../components/BlogItem";
-import Footer from "../components/Footer";
 import FooterBanner from "../components/FooterBanner";
 import HomeSliderv2 from "../components/HomeSliderv2";
 import BannerBoxv2 from "../components/BannerBoxv2";
+import AdsBannerSliderv2 from "../components/AdsBannerSliderv2";
 
 function Home() {
   const [value, setValue] = useState(0);
@@ -28,7 +28,7 @@ function Home() {
   };
 
   return (
-    <div className="bg-[#ffffff]">
+    <div className="bg-white">
       <HomeSlider />
       <HomeCategorySlider />
       <section className="py-6">
@@ -37,8 +37,18 @@ function Home() {
             <HomeSliderv2 />
           </div>
           <div className="part2 gap-5 w-[30%] flex items-center justify-between flex-col">
-            <BannerBoxv2 info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"} />
-            <BannerBoxv2 info="right" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"} />
+            <BannerBoxv2
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
+            />
+            <BannerBoxv2
+              info="right"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/pharmacy-WEB.jpg"
+              }
+            />
           </div>
         </div>
       </section>
@@ -97,8 +107,8 @@ function Home() {
               Only &#8377; 200 /-
             </div>
           </div>
-          <div className="bg-white">
-            <AdsBannerSlider items={3} />
+          <div className="bg-white pb-4">
+            <AdsBannerSliderv2 items={4} />
           </div>
         </div>
       </section>
@@ -156,13 +166,6 @@ function Home() {
           </Swiper>
         </div>
       </section>
-      <hr />
-      <section className="bg-white py-5 pt-5 footerBanner">
-        <FooterBanner />
-        <hr />
-      </section>
-      <Footer />
-      <br />
     </div>
   );
 }

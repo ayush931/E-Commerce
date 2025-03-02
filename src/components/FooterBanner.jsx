@@ -6,8 +6,8 @@ import { BiSupport } from "react-icons/bi";
 
 function FooterBanner() {
   return (
-    <div className="py-6 bg-white">
-      <div className="container">
+    <div className="py-8 bg-white border-t-2">
+      <div className="container py-3">
         <div className="flex items-center justify-center gap-2 pb-8">
           <div className="col1 flex items-center justify-center flex-col group w-[15%]">
             <LiaShippingFastSolid className="text-[40px] transition-all duration-300 group-hover:text-primary group-hover:translate-y-1" />
