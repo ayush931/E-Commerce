@@ -7,7 +7,7 @@ function Blogitem() {
     <div className="blogItem group">
       <div className="imageWrapper w-full overflow-hidden rounded-md cursor-pointer relative">
         <img
-          src="https://newbreak.church/nitropack_static/HGpYAcRHhxqRxOGuCOYzvLFhPQWoSGrx/assets/images/optimized/rev-a918992/newbreak.church/wp-content/uploads/2023/12/rokbmubcovg.jpg"
+          src="https://img.freepik.com/free-vector/illustration-web-design_53876-37576.jpg?ga=GA1.1.1716538387.1741836126&semt=ais_hybrid"
           alt="blog image"
           className="w-full transition-all group-hover:scale-105 group-hover:rotate-1"
         />

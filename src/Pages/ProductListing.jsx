@@ -1,6 +1,6 @@
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
-
+import Pagination from '@mui/material/Pagination';
 import SideBar from "../components/SideBar";
 import ProductItem from "../components/ProductItem";
 import { Button } from "@mui/material";
@@ -24,7 +24,7 @@ function ProductListing() {
   };
 
   return (
-    <section className="py-5 bg-[#e4f0d4]">
+    <section className="py-5 bg-[#e4f0d4] pb-0">
       <div className="container">
         <Breadcrumbs aria-label="breadcrumb">
           <Link
@@ -52,16 +52,20 @@ function ProductListing() {
           </div>
           <div className="rightContent w-[80%] py-3">
             <div className="bg-[#f1f1f1] p-2 w-full mb-4 rounded-md flex items-center justify-between">
-              <div className="col1 flex items-center">
+              <div className="col1 flex items-center itemViewActions">
                 <Button
                   onClick={() => setItemView("list")}
-                  className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-black"
+                  className={`!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-black ${
+                    itemView === "list" && "active"
+                  }`}
                 >
                   <RiMenuFill className="text-[rgba(0,0,0,0.7)]" />
                 </Button>
                 <Button
                   onClick={() => setItemView("grid")}
-                  className="!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-black"
+                  className={`!w-[40px] !h-[40px] !min-w-[40px] !rounded-full !text-black ${
+                    itemView === "grid" && "active"
+                  }`}
                 >
                   <IoGrid className="text-[rgba(0,0,0,0.7)]" />
                 </Button>
@@ -131,7 +135,13 @@ function ProductListing() {
                 </Menu>
               </div>
             </div>
-            <div className="grid grid-cols-4 md:grid-cols-4 gap-4">
+            <div
+              className={`grid ${
+                itemView === "grid"
+                  ? "grid grid-cols-4 md:grid-cols-4 gap-4"
+                  : "grid-cols-1 md:grid-cols-1"
+              } gap-4`}
+            >
               {itemView === "grid" ? (
                 <>
                   <ProductItem />
@@ -146,8 +156,21 @@ function ProductListing() {
                   <ProductItem />
                 </>
               ) : (
-                <><ProductItemListView /></>
+                <>
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                  <ProductItemListView />
+                </>
               )}
+            </div>
+            <div className="flex items-center justify-center mt-10">
+              <Pagination count={10} showFirstButton showLastButton />
             </div>
           </div>
         </div>

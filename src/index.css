@@ -42,6 +42,10 @@ body {
   padding: 11px 20px !important;
 }
 
+.btn-org:hover {
+  background-color: #171717 !important;
+}
+
 .link:hover {
   color: #287c2c;
 }
@@ -311,4 +315,14 @@ footer form input::placeholder {
 
 .range-slider .range-slider__thumb, .range-slider .range-slider__range {
   background: #287c2c !important;
+}
+
+.itemViewActions button.active svg {
+  color: #287c2c !important;
+  opacity: 1 !important;
+}
+
+.Mui-selected.MuiPaginationItem-page {
+  background: #287c2c !important;
+  color: #fff !important;
 }

@@ -5,14 +5,15 @@ import { Button } from "@mui/material";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineZoomOutMap } from "react-icons/md";
+import { IoCartOutline } from "react-icons/io5";
 
 function ProductItemListView() {
   return (
     <div className="group">
-      <div className="productItem rounded-md overflow-hidden border-2 border-[#e4f0d4] shadow-lg group-hover:scale-105 transition-all duration-500">
-        <div className="imageWrapper w-[100%] rounded-md relative group">
+      <div className="productItem rounded-md overflow-hidden border-2 border-[#e4f0d4] shadow-lg group-hover:scale-105 transition-all duration-500 flex items-center">
+        <div className="imageWrapper w-[25%] rounded-md relative group">
           <Link to={"/"}>
-            <div className="img h-[225px] relative overflow-hidden">
+            <div className="img h-[225px] relative overflow-hidden ml-2">
               <img
                 src="https://www.jiomart.com/images/product/original/rvkac6kwsu/buynewtrend-light-blue-solid-women-denim-jacket-product-images-rvkac6kwsu-0-202311190356.jpg?im=Resize=(600,750)"
                 alt=""
@@ -39,17 +40,22 @@ function ProductItemListView() {
             </Button>
           </div>
         </div>
-        <div className="info p-3 py-5 bg-gray-100">
-          <h5 className="text-[14px]">
+        <div className="info p-3 py-5 px-8 w-[75%]">
+          <h5 className="text-[15px]">
             <Link to={"/"} className="link transition-all">
               Iphone
             </Link>
           </h5>
-          <h3 className="text-[14px] title mt-1 font-[500] mb-1 text-black">
+          <h3 className="text-[18px] title mt-3 font-[500] mb-3 text-black">
             <Link to={"/"} className="link transition-all">
               Apple iPhone 15 (128 GB) - Black
             </Link>
           </h3>
+          <p className="text-[14px] mb-3">
+            Lorem, ipsum dolor sit amet consectetur adipisicing elit. Iste nulla
+            adipisci doloribus minus? Tempore modi eos pariatur sint impedit
+            porro eum nam et quo optio!
+          </p>
           <Rating name="size-small" defaultValue={4} size="small" readOnly />
           <div className="flex items-center gap-4">
             <span className="oldPrice line-through text-[15px] font-[500]">
@@ -58,6 +64,12 @@ function ProductItemListView() {
             <span className="price text-primary font-[600]">
               &#8377; 180000
             </span>
+          </div>
+          <div className="mt-3">
+            <Button className="btn-org flex gap-2">
+              <IoCartOutline className="text-[20px]" />
+              Add to cart
+            </Button>
           </div>
         </div>
       </div>
