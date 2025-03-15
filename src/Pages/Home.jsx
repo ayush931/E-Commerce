@@ -15,7 +15,6 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import Blogitem from "../components/BlogItem";
-import FooterBanner from "../components/FooterBanner";
 import HomeSliderv2 from "../components/HomeSliderv2";
 import BannerBoxv2 from "../components/BannerBoxv2";
 import AdsBannerSliderv2 from "../components/AdsBannerSliderv2";

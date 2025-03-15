@@ -27,7 +27,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/adver"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -36,7 +36,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -45,7 +45,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -54,7 +54,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -63,7 +63,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -72,7 +72,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -81,7 +81,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />
@@ -90,7 +90,7 @@ export default function HomeSlider() {
           <SwiperSlide>
             <Link to={"/advert"}>
               <img
-                src="https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=2700/layout-engine/2022-05/Group-33704.jpg"
+                src="https://rukminim2.flixcart.com/fk-p-flap/1620/270/image/8921fc73c192a29f.jpg?q=20"
                 alt="image"
                 className="w-full h-auto object-cover"
               />

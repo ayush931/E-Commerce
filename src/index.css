@@ -5,16 +5,25 @@
 * {
   margin: 0px;
   padding: 0px;
-} 
+}
+
+p {
+  font-size: 14px;
+  line-height: 25px;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: 600;
+}
 
 ::-webkit-scrollbar {
-  width: 12px; 
-  height: 25vh; 
+  width: 12px;
+  height: 25vh;
 }
 
 ::-webkit-scrollbar-thumb {
-  background: #287c2c; 
-  border-radius: 6px; 
+  background: #287c2c;
+  border-radius: 6px;
 }
 
 ::-webkit-scrollbar-thumb:hover {
@@ -76,10 +85,17 @@ nav button:hover {
   justify-content: center;
   border-radius: 100%;
   background: #fff;
-  width: 45px;
-  height: 45px;
-  min-width: 45px;
   box-shadow: 0 1px 3px #0000001f, 0 1px 2px #0000003d !important;
+}
+
+.swiper-button-prev:hover,
+.swiper-button-next:hover {
+  background-color: #287c2c !important;
+}
+
+.swiper-button-prev:hover::after,
+.swiper-button-next:hover:after {
+  color: #fff !important;
 }
 
 .swiper-button-prev::after,
@@ -88,14 +104,29 @@ nav button:hover {
   color: #000;
 }
 
-.mySwiper .swiper-button-prev:hover,
-.mySwiper .swiper-button-next:hover {
-  background: #287c2c !important;
+.mySwiper .swiper-button-prev,
+.swiper-rtl .swiper-button-next {
+  left: 0px !important;
 }
 
-.mySwiper .swiper-button-prev:hover::after,
-.mySwiper .swiper-button-next:hover::after {
-  color: #fff !important;
+.mySwiper .swiper-button-next,
+.swiper-rtl .swiper-button-prev {
+  right: 0px !important;
+}
+
+.mySwiper .swiper-button-prev,
+.mySwiper .swiper-button-next {
+  border-radius: 0 !important;
+  align-items: center !important;
+  justify-content: center !important;
+  display: flex !important;
+  top: 90px !important;
+  height: 100px !important;
+  font-size: 10px !important;
+}
+
+.mySwiper .img {
+  border-radius: 0px !important;
 }
 
 .homeCategorySlider {
@@ -118,11 +149,6 @@ nav button:hover {
   border: 1px solid rgba(0, 0, 0, 0.1);
 }
 
-.homeCategorySlider .swiper-button-prev:hover,
-.homeCategorySlider .swiper-button-next:hover {
-  background: #287c2c !important;
-}
-
 .homeCategorySlider .swiper-button-prev:hover::after,
 .homeCategorySlider .swiper-button-next:hover::after {
   color: #fff !important;
@@ -140,16 +166,6 @@ nav button:hover {
 .smallButton .swiper-button-next::after {
   font-size: 18px !important;
   color: #000;
-}
-
-.smallButton .swiper-button-prev:hover,
-.smallButton .swiper-button-next:hover {
-  background: #287c2c !important;
-}
-
-.smallButton .swiper-button-prev:hover::after,
-.smallButton .swiper-button-next:hover::after {
-  color: #fff !important;
 }
 
 .MuiTabs-indicator {
@@ -176,16 +192,6 @@ nav button:hover {
 .productItemSlider .swiper-button-next::after {
   font-size: 18px !important;
   color: #000;
-}
-
-.productItemSlider .swiper-button-prev:hover,
-.productItemSlider .swiper-button-next:hover {
-  background: #287c2c !important;
-}
-
-.productItemSlider .swiper-button-prev:hover::after,
-.productItemSlider .swiper-button-next:hover::after {
-  color: #fff !important;
 }
 
 footer form input::placeholder {
@@ -216,16 +222,6 @@ footer form input::placeholder {
   color: #000;
 }
 
-.blogItem .swiper-button-prev:hover,
-.blogItem .swiper-button-next:hover {
-  background: #287c2c !important;
-}
-
-.blogItem .swiper-button-prev:hover::after,
-.blogItem .swiper-button-next:hover::after {
-  color: #fff !important;
-}
-
 .swiper-pagination-bullet,
 .swiper-pagination-bullet-active {
   background: #287c2c !important;
@@ -243,16 +239,6 @@ footer form input::placeholder {
 .homeSliderv2 .swiper-button-next::after {
   font-size: 25px !important;
   color: #000;
-}
-
-.homeSliderv2 .swiper-button-prev:hover,
-.homeSliderv2 .swiper-button-next:hover {
-  background: #287c2c !important;
-}
-
-.homeSliderv2 .swiper-button-prev:hover::after,
-.homeSliderv2 .swiper-button-next:hover::after {
-  color: #fff !important;
 }
 
 .homeSliderv2 .swiper-slide-active .info {
@@ -304,7 +290,7 @@ footer form input::placeholder {
   transition: height 400ms;
 }
 
-.range-slider  {
+.range-slider {
   height: 3px !important;
 }
 
@@ -313,7 +299,8 @@ footer form input::placeholder {
   height: 14px !important;
 }
 
-.range-slider .range-slider__thumb, .range-slider .range-slider__range {
+.range-slider .range-slider__thumb,
+.range-slider .range-slider__range {
   background: #287c2c !important;
 }
 
@@ -325,4 +312,65 @@ footer form input::placeholder {
 .Mui-selected.MuiPaginationItem-page {
   background: #287c2c !important;
   color: #fff !important;
+}
+
+.iiz__hint {
+  display: none !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next {
+  bottom: 0px !important;
+  right: inherit !important;
+  top: inherit !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-prev {
+  left: 0px !important;
+  top: 20px !important;
+  width: 100% !important;
+  height: 30px !important;
+  border-radius: 0px !important;
+}
+
+.zoomProductSliderThumbs .swiper-button-next::after,
+.zoomProductSliderThumbs .swiper-button-prev::after {
+  transform: rotate(90deg);
+}
+
+.zoomProductSliderThumbs .swiper-wrapper {
+  padding-top: 38px !important;
+  padding-bottom: 50px !important;
+}
+
+.productContent .actions button {
+  min-width: 40px !important;
+  border: 1px solid black !important;
+  color: #171717;
+  height: 30px;
+}
+
+input[type=number]::-webkit-inner-spin-button,
+input[type=number]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+}
+
+.reviewScroll::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+.reviewScroll::-webkit-scrollbar-thumb {
+  background: #ccc !important;
+}
+
+form::-webkit-scrollbar {
+  width: 5px !important;
+}
+
+form::-webkit-scrollbar-thumb {
+  background: #ccc !important;
 }

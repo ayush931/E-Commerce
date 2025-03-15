@@ -40,7 +40,7 @@ function ProductItem() {
           </div>
         </div>
         <div className="info p-3 py-5 bg-gray-100">
-          <h5 className="text-[14px]">
+          <h5 className="text-[14px] !font-[400]">
             <Link to={"/"} className="link transition-all">
               Iphone
             </Link>
