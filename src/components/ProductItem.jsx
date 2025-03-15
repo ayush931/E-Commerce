@@ -5,13 +5,17 @@ import { Button } from "@mui/material";
 import { IoGitCompareOutline } from "react-icons/io5";
 import { FaRegHeart } from "react-icons/fa6";
 import { MdOutlineZoomOutMap } from "react-icons/md";
+import { useContext } from "react";
+import { MyContext } from "../App";
 
 function ProductItem() {
+  const context = useContext(MyContext);
+
   return (
     <div className="group">
       <div className="productItem rounded-md overflow-hidden border-2 border-[#e4f0d4] shadow-lg group-hover:scale-105 transition-all duration-500">
         <div className="imageWrapper w-[100%] rounded-md relative group">
-          <Link to={"/"}>
+          <Link to={"/productDetails/565656"}>
             <div className="img h-[225px] relative overflow-hidden">
               <img
                 src="https://www.jiomart.com/images/product/original/rvkac6kwsu/buynewtrend-light-blue-solid-women-denim-jacket-product-images-rvkac6kwsu-0-202311190356.jpg?im=Resize=(600,750)"
@@ -28,7 +32,10 @@ function ProductItem() {
             15% off
           </span>
           <div className="actions absolute right-[-200px] top-[2px] z-50 flex items-center gap-2 flex-col w-[80px] transition-all duration-300 group-hover:right-[0px] group-hover:top-[15px] opacity-0 group-hover:opacity-100">
-            <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white text-black hover:!bg-primary hover:text-white group">
+            <Button
+              className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white text-black hover:!bg-primary hover:text-white group"
+              onClick={() => context.setOpenProductDetailsModal(true)}
+            >
               <MdOutlineZoomOutMap className="text-[18px] !text-black group-hover:text-white hover:!text-white" />
             </Button>
             <Button className="!w-[35px] !h-[35px] !min-w-[35px] !rounded-full !bg-white text-black hover:!bg-primary hover:text-white group">
