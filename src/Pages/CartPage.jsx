@@ -3,30 +3,31 @@ import { IoBagCheckOutline } from "react-icons/io5";
 import CartItems from "../components/CartItems";
 
 function CartPage() {
-  
   return (
     <section className="section py-10 pb-10">
       <div className="container w-[80%] max-w-[80%] flex gap-5">
         <div className="leftPart w-[70%]">
-          <div className="shadow-md rounded-md bg-white">
-            <div className="py-2 px-3 border-b border-black">
-              <h2>Your cart</h2>
-              <p className="mt-0">
-                There are <span className="font-bold text-primary">2</span>{" "}
-                products in your cart
-              </p>
+          <div className="scroll max-h-[500px] overflow-y-scroll overflow-x-hidden">
+            <div className="shadow-md rounded-md bg-white">
+              <div className="py-2 px-3 border-b border-black">
+                <h2>Your cart</h2>
+                <p className="mt-0">
+                  There are <span className="font-bold text-primary">2</span>{" "}
+                  products in your cart
+                </p>
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+                <CartItems size="S" quantity={1} />
+              </div>
             </div>
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
-            <CartItems size="S" quantity={1} />
           </div>
         </div>
         <div className="rightPart w-[30%]">

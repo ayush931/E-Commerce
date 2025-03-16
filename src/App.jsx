@@ -21,6 +21,10 @@ import Register from "./Pages/Register";
 import Drawer from "@mui/material/Drawer";
 import CartPanel from "./components/CartPanel";
 import CartPage from "./Pages/CartPage";
+import toast, { Toaster } from "react-hot-toast";
+import Verify from "./Pages/Verify";
+import ForgotPassword from "./Pages/ForgotPassword";
+import Checkout from "./Pages/Checkout";
 
 const MyContext = createContext();
 
@@ -42,11 +46,20 @@ function App() {
     setOpenProductDetailsModal(false);
   };
 
+  function openAlertBox(status, message) {
+    if (status === "success") {
+      toast.success(message);
+    } else {
+      toast.error(message);
+    }
+  }
+
   const values = {
     setOpenProductDetailsModal,
     setOpenCartPanel,
     toggleCartPanel,
-    openCartPanel
+    openCartPanel,
+    openAlertBox,
   };
 
   return (
@@ -69,6 +82,13 @@ function App() {
             <Route path={"/login"} exact={true} element={<Login />} />
             <Route path={"/register"} exact={true} element={<Register />} />
             <Route path={"/cart"} exact={true} element={<CartPage />} />
+            <Route path={"/verify"} exact={true} element={<Verify />} />
+            <Route
+              path={"/forgotPassword"}
+              exact={true}
+              element={<ForgotPassword />}
+            />
+            <Route path={"/checkout"} exact={true} element={<Checkout />} />
           </Routes>
           <FooterBanner />
           <Footer />
@@ -117,6 +137,46 @@ function App() {
           </div>
           <CartPanel />
         </Drawer>
+        <Toaster
+          position="top-right"
+          gutter={8}
+          toastOptions={{
+            success: {
+              style: {
+                background: "#287c2c", // Green background for success
+                color: "#ffffff", // White text
+                padding: "16px",
+                borderRadius: "8px",
+                width: "300px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontWeight: "bold",
+              },
+              iconTheme: {
+                primary: "#ffffff", // White icon
+                secondary: "#287c2c", // Green background for icon
+              },
+            },
+            error: {
+              style: {
+                background: "#ef4444", // Red background for error
+                color: "#ffffff", // White text
+                padding: "16px",
+                borderRadius: "8px",
+                width: "300px",
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                fontWeight: "bold",
+              },
+              iconTheme: {
+                primary: "#ffffff", // White icon
+                secondary: "#ef4444", // Red background for icon
+              },
+            },
+          }}
+        />
       </BrowserRouter>
     </>
   );
