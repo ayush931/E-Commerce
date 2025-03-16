@@ -5,7 +5,6 @@ import { Button } from "@mui/material";
 import { FaRegPlusSquare } from "react-icons/fa";
 
 function CategoryCollapse() {
-
   const [subMenuIndex, setSubMenuIndex] = useState(null);
   const [innerSubMenuIndex, setInnerSubMenuIndex] = useState(null);
 

@@ -32,7 +32,7 @@ function ProductZoom() {
           >
             <SwiperSlide>
               <div
-                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 0 ? 'opacity-1' : 'opacity-30'}`}
+                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 0 ? "opacity-1" : "opacity-30"}`}
                 onClick={() => goto(0)}
               >
                 <img
@@ -44,7 +44,7 @@ function ProductZoom() {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 1 ? 'opacity-1' : 'opacity-30'}`}
+                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 1 ? "opacity-1" : "opacity-30"}`}
                 onClick={() => goto(1)}
               >
                 <img
@@ -56,7 +56,7 @@ function ProductZoom() {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 2 ? 'opacity-1' : 'opacity-30'}`}
+                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 2 ? "opacity-1" : "opacity-30"}`}
                 onClick={() => goto(2)}
               >
                 <img
@@ -68,7 +68,7 @@ function ProductZoom() {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 3 ? 'opacity-1' : 'opacity-30'}`}
+                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 3 ? "opacity-1" : "opacity-30"}`}
                 onClick={() => goto(3)}
               >
                 <img
@@ -80,7 +80,7 @@ function ProductZoom() {
             </SwiperSlide>
             <SwiperSlide>
               <div
-                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 4 ? 'opacity-1' : 'opacity-30'}`}
+                className={`item rounded-md overflow-hidden cursor-pointer group ${slideIndex === 4 ? "opacity-1" : "opacity-30"}`}
                 onClick={() => goto(4)}
               >
                 <img

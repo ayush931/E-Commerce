@@ -26,70 +26,100 @@ function AdsBannerSliderv2(props) {
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-             info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-             info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>
         <SwiperSlide>
           <Link to="/">
             <BannerBoxv2
-              info="left" image={"https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"}
+              info="left"
+              image={
+                "https://cdn.grofers.com/cdn-cgi/image/f=auto,fit=scale-down,q=70,metadata=none,w=720/layout-engine/2023-07/Pet-Care_WEB.jpg"
+              }
             />
           </Link>
         </SwiperSlide>

@@ -11,8 +11,6 @@ function CategoryPanel({ isOpenCategoryPanel, setIsOpenCategoryPanel }) {
     setIsOpenCategoryPanel(newOpen);
   };
 
-  
-
   const DrawerList = (
     <Box sx={{ width: 250 }} role="presentation" className="categoryPanel">
       <h2 className="text-[16px] px-5 py-3 font-[500] flex items-center justify-between border-b-[2px]">

@@ -1,6 +1,6 @@
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
-import Pagination from '@mui/material/Pagination';
+import Pagination from "@mui/material/Pagination";
 import SideBar from "../components/SideBar";
 import ProductItem from "../components/ProductItem";
 import { Button } from "@mui/material";

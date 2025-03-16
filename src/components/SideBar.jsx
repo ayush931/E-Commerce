@@ -238,7 +238,12 @@ function SideBar() {
           <Rating name="size-small" defaultValue={2} size="small" readOnly />
         </div>
         <div className="w-full">
-          <Rating name="size-small" defaultValue={false} size="small" readOnly />
+          <Rating
+            name="size-small"
+            defaultValue={false}
+            size="small"
+            readOnly
+          />
         </div>
       </div>
     </div>

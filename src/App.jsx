@@ -16,7 +16,8 @@ import Slide from "@mui/material/Slide";
 import ProductZoom from "./components/ProductZoom";
 import { IoClose } from "react-icons/io5";
 import ProductDetailsComponent from "./components/ProductDetailsComponent";
-
+import Login from "./Pages/Login";
+import Register from "./Pages/Register";
 
 const MyContext = createContext();
 
@@ -34,7 +35,7 @@ function App() {
   };
 
   const values = {
-    setOpenProductDetailsModal
+    setOpenProductDetailsModal,
   };
 
   return (
@@ -54,35 +55,50 @@ function App() {
               exact={true}
               element={<ProductDetails />}
             />
+            <Route
+              path={"/login"}
+              exact={true}
+              element={<Login />}
+            />
+             <Route
+              path={"/register"}
+              exact={true}
+              element={<Register />}
+            />
           </Routes>
           <FooterBanner />
           <Footer />
         </MyContext.Provider>
+        <Dialog
+          open={openProductDetailsModal}
+          TransitionComponent={Transition}
+          keepMounted
+          onClose={handleCloseProductDetailsModal}
+          aria-describedby="alert-dialog-slide-description"
+          className="productDetailsModal relative"
+          fullWidth={fullWidth}
+          maxWidth={maxWidth}
+        >
+          <DialogContent>
+            <div className="flex items-center w-full productDetailsModalContainer">
+              <div className="col1 w-[40%] px-3">
+                <ProductZoom />
+              </div>
+              <div className="col2 w-[60%] ml-5 p-5 productContent">
+                <ProductDetailsComponent />
+              </div>
+            </div>
+          </DialogContent>
+          <DialogActions>
+            <Button className="link !bg-[#e4f0d4] !absolute top-[15px] right-[15px] cursor-pointer !rounded-full !w-[40px] !h-[40px]">
+              <IoClose
+                onClick={handleCloseProductDetailsModal}
+                className="!text-black !w-[40px] text-[20px]"
+              />
+            </Button>
+          </DialogActions>
+        </Dialog>
       </BrowserRouter>
-      <Dialog
-        open={openProductDetailsModal}
-        TransitionComponent={Transition}
-        keepMounted
-        onClose={handleCloseProductDetailsModal}
-        aria-describedby="alert-dialog-slide-description"
-        className="productDetailsModal relative"
-        fullWidth={fullWidth}
-        maxWidth={maxWidth}
-      >
-        <DialogContent>
-          <div className="flex items-center w-full productDetailsModalContainer">
-            <div className="col1 w-[40%] px-3">
-              <ProductZoom />
-            </div>
-            <div className="col2 w-[60%] ml-5 p-5 productContent">
-              <ProductDetailsComponent />
-            </div>
-          </div>
-        </DialogContent>
-        <DialogActions>
-          <Button className="link !bg-[#e4f0d4] !absolute top-[15px] right-[15px] cursor-pointer !rounded-full !w-[40px] !h-[40px]"><IoClose onClick={handleCloseProductDetailsModal} className="!text-black !w-[40px] text-[20px]" /></Button>
-        </DialogActions>
-      </Dialog>
     </>
   );
 }
