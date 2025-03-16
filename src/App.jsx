@@ -18,6 +18,8 @@ import { IoClose } from "react-icons/io5";
 import ProductDetailsComponent from "./components/ProductDetailsComponent";
 import Login from "./Pages/Login";
 import Register from "./Pages/Register";
+import Drawer from "@mui/material/Drawer";
+import CartPanel from "./components/CartPanel";
 
 const MyContext = createContext();
 
@@ -26,6 +28,11 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 });
 
 function App() {
+  const [openCartPanel, setOpenCartPanel] = useState(false);
+
+  const toggleCartPanel = (newOpen) => () => {
+    setOpenCartPanel(newOpen);
+  };
   const [openProductDetailsModal, setOpenProductDetailsModal] = useState(false);
   const [maxWidth, setMaxWidth] = useState("xl");
   const [fullWidth, setFullWidth] = useState(true);
@@ -36,6 +43,7 @@ function App() {
 
   const values = {
     setOpenProductDetailsModal,
+    setOpenCartPanel,
   };
 
   return (
@@ -55,16 +63,8 @@ function App() {
               exact={true}
               element={<ProductDetails />}
             />
-            <Route
-              path={"/login"}
-              exact={true}
-              element={<Login />}
-            />
-             <Route
-              path={"/register"}
-              exact={true}
-              element={<Register />}
-            />
+            <Route path={"/login"} exact={true} element={<Login />} />
+            <Route path={"/register"} exact={true} element={<Register />} />
           </Routes>
           <FooterBanner />
           <Footer />
@@ -98,6 +98,21 @@ function App() {
             </Button>
           </DialogActions>
         </Dialog>
+        <Drawer
+          open={openCartPanel}
+          onClose={toggleCartPanel(false)}
+          anchor="right"
+          className="cartPanel"
+        >
+          <div className="flex items-center justify-between py-3 px-4 gap-3 border-b border-black">
+            <h4>Shopping Cart (1)</h4>
+            <IoClose
+              className="text-[20px] cursor-pointer"
+              onClick={toggleCartPanel(false)}
+            />
+          </div>
+          <CartPanel />
+        </Drawer>
       </BrowserRouter>
     </>
   );

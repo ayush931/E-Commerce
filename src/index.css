@@ -386,3 +386,7 @@ form::-webkit-scrollbar {
 form::-webkit-scrollbar-thumb {
   background: #ccc !important;
 }
+
+.cartPanel .MuiPaper-root {
+  width: 400px !important;
+}
