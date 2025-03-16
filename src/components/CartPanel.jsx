@@ -206,12 +206,22 @@ function CartPanel() {
           </div>
 
           <div className="flex items-center justify-between w-full gap-4 mt-2">
-            <Button className="btn-org btn-lg w-[40%] py-2 rounded-md transition-all duration-200 hover:opacity-90 bg-gray-100 text-gray-800 hover:bg-gray-200">
-              View Cart
-            </Button>
-            <Button className="btn-org btn-lg w-[40%] py-2 rounded-md transition-all duration-200 hover:opacity-90 bg-primary text-white">
-              Checkout
-            </Button>
+            <Link to={"/cart"} className="w-[40%]">
+              <Button
+                href="/cart"
+                className="btn-org btn-lg py-2 rounded-md transition-all duration-200 hover:opacity-90 bg-gray-100 text-gray-800 hover:bg-gray-200"
+              >
+                View Cart
+              </Button>
+            </Link>
+            <Link to={"/cart"} className="w-[40%]">
+              <Button
+                href="/cart"
+                className="btn-org btn-lg py-2 rounded-md transition-all duration-200 hover:opacity-90 bg-gray-100 text-gray-800 hover:bg-gray-200"
+              >
+                Checkout
+              </Button>
+            </Link>
           </div>
         </div>
       </div>

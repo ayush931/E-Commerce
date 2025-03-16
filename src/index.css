@@ -390,3 +390,7 @@ form::-webkit-scrollbar-thumb {
 .cartPanel .MuiPaper-root {
   width: 400px !important;
 }
+
+.size-menu .MuiButtonBase-root {
+  font-size: 12px !important;
+}

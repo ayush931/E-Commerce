@@ -20,6 +20,7 @@ import Login from "./Pages/Login";
 import Register from "./Pages/Register";
 import Drawer from "@mui/material/Drawer";
 import CartPanel from "./components/CartPanel";
+import CartPage from "./Pages/CartPage";
 
 const MyContext = createContext();
 
@@ -44,6 +45,8 @@ function App() {
   const values = {
     setOpenProductDetailsModal,
     setOpenCartPanel,
+    toggleCartPanel,
+    openCartPanel
   };
 
   return (
@@ -65,6 +68,7 @@ function App() {
             />
             <Route path={"/login"} exact={true} element={<Login />} />
             <Route path={"/register"} exact={true} element={<Register />} />
+            <Route path={"/cart"} exact={true} element={<CartPage />} />
           </Routes>
           <FooterBanner />
           <Footer />
