@@ -1,6 +1,7 @@
 import { Button } from "@mui/material";
 import { IoBagCheckOutline } from "react-icons/io5";
 import CartItems from "../components/CartItems";
+import { Link } from "react-router-dom";
 
 function CartPage() {
   return (
@@ -51,10 +52,10 @@ function CartPage() {
               <span className="text-primary font-bold">$ 1,600</span>
             </p>
             <br />
-            <Button className="btn-org btn-lg w-full flex gap-2 items-center justify-center">
+            <Link to={"/checkout"} className="btn-org btn-lg w-full flex gap-2 items-center justify-center">
               <IoBagCheckOutline className="text-[20px]" />
               Checkout
-            </Button>
+            </Link>
           </div>
         </div>
       </div>

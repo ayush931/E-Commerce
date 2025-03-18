@@ -215,7 +215,7 @@ function CartPanel() {
               </Button>
             </Link>
             <Link to={"/checkout"} className="w-[40%]">
-              <Button className="btn-org btn-lg py-2 rounded-md transition-all duration-200 hover:opacity-90 bg-gray-100 text-gray-800 hover:bg-gray-200">
+              <Button href={"/checkout"} className="btn-org btn-border btn-lg py-2 rounded-md transition-all duration-200 hover:opacity-90 bg-gray-100 text-gray-800 hover:bg-gray-200">
                 Checkout
               </Button>
             </Link>

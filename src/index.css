@@ -61,7 +61,7 @@ body {
   color: white !important;
   font-weight: 500;
   font-size: 16px;
-  padding: 11px 20px !important;
+  padding: 7px 20px !important;
 }
 
 .btn-lg {
@@ -71,6 +71,21 @@ body {
 
 .btn-org:hover {
   background-color: #171717 !important;
+}
+
+.btn-org.btn-border {
+  background: none !important;
+  color: #287c2c !important;
+  border: 1px solid #287c2c;
+  font-weight: 500;
+  font-size: 16px;
+  padding: 7px 20px !important;
+}
+
+.btn-org.btn-border:hover {
+  background-color: #171717 !important;
+  color: white !important;
+  border: 1px solid #171717;
 }
 
 .link:hover {
@@ -411,4 +426,36 @@ form::-webkit-scrollbar-thumb {
 
 .otpBox input:focus {
   border: 1px solid black !important;
+}
+
+#account-menu .MuiPaper-root {
+  width: 200px !important;
+}
+
+.myAccountTabs li a {
+  position: relative;
+  display: block;
+}
+
+.myAccountTabs li a::before {
+  content: "";
+  width: 4px;
+  height: 50%;
+  position: absolute;
+  top: 50px;
+  left: 0px;
+  background: #287c2c;
+  transition: all 0.3s ease-in-out;
+  opacity: 0;
+}
+
+.myAccountTabs li a.active::before {
+  height: 100%;
+  opacity: 1;
+  top: 0px;
+}
+
+.myAccountTabs li a.active button svg {
+  color: #287c2c !important;
+  opacity: 1 !important;
 }

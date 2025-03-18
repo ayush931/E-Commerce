@@ -25,6 +25,7 @@ import toast, { Toaster } from "react-hot-toast";
 import Verify from "./Pages/Verify";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Checkout from "./Pages/Checkout";
+import MyAccount from "./Pages/MyAccount";
 
 const MyContext = createContext();
 
@@ -34,13 +35,14 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 
 function App() {
   const [openCartPanel, setOpenCartPanel] = useState(false);
+  const [openProductDetailsModal, setOpenProductDetailsModal] = useState(false);
+  const [maxWidth, setMaxWidth] = useState("xl");
+  const [fullWidth, setFullWidth] = useState(true);
+  const [isLogin, setIsLogin] = useState(true);
 
   const toggleCartPanel = (newOpen) => () => {
     setOpenCartPanel(newOpen);
   };
-  const [openProductDetailsModal, setOpenProductDetailsModal] = useState(false);
-  const [maxWidth, setMaxWidth] = useState("xl");
-  const [fullWidth, setFullWidth] = useState(true);
 
   const handleCloseProductDetailsModal = () => {
     setOpenProductDetailsModal(false);
@@ -60,6 +62,8 @@ function App() {
     toggleCartPanel,
     openCartPanel,
     openAlertBox,
+    isLogin,
+    setIsLogin
   };
 
   return (
@@ -89,6 +93,7 @@ function App() {
               element={<ForgotPassword />}
             />
             <Route path={"/checkout"} exact={true} element={<Checkout />} />
+            <Route path={"/myAccount"} exact={true} element={<MyAccount />} />
           </Routes>
           <FooterBanner />
           <Footer />

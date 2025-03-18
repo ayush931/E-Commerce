@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
 import { Link } from "react-router-dom";
 import { BsBagCheckFill } from "react-icons/bs";
@@ -229,7 +228,7 @@ function Checkout() {
                 <span className="text-[14px] font-[500]">$ 1,300</span>
               </div>
             </div>
-            <Button className="btn-org btn-lg w-full gap-5"><BsBagCheckFill className="text-[20px] mb-1" />Checkout</Button>
+            <Link to={"/buy"} className="mui-button-link btn-org btn-lg gap-2 btn-org btn-lg w-full flex items-center justify-center"><BsBagCheckFill className="text-[20px] mb-1" />Checkout</Link>
           </div>
         </div>
       </div>
