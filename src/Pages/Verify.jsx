@@ -4,15 +4,15 @@ import { Button } from "@mui/material";
 import { MyContext } from "../App";
 
 function Verify() {
-  const context = useContext(MyContext)
+  const context = useContext(MyContext);
   const [otp, setOtp] = useState("");
   function handleOtpChange(value) {
     setOtp(value);
   }
 
-  function verifyOtp (e) {
-    e.preventDefault()
-    context.openAlertBox('success', otp)
+  function verifyOtp(e) {
+    e.preventDefault();
+    context.openAlertBox("success", otp);
   }
   return (
     <section className="section py-10">
@@ -36,7 +36,13 @@ function Verify() {
           <form onSubmit={verifyOtp}>
             <OtpBox length={6} onChange={handleOtpChange} />
             <div className="flex items-center justify-center mt-5">
-              <Button type="submit" className="btn-org btn-lg w-full" onClick={() => context.openAlertBox("success", 'OTP Send')}>Verify OTP</Button>
+              <Button
+                type="submit"
+                className="btn-org btn-lg w-full"
+                onClick={() => context.openAlertBox("success", "OTP Send")}
+              >
+                Verify OTP
+              </Button>
             </div>
           </form>
         </div>

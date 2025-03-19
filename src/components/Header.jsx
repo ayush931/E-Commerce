@@ -169,7 +169,7 @@ function Header() {
                         <span className="text-[15px]">My Account</span>
                       </MenuItem>
                     </Link>
-                    <Link to={"/orders"} className="link">
+                    <Link to={"/myOrders"} className="link">
                       <MenuItem
                         onClick={handleClose}
                         className="flex gap-4 !py-2"

@@ -51,7 +51,10 @@ function CartPage() {
               <span className="text-primary font-bold">$ 1,600</span>
             </p>
             <br />
-            <Link to={"/checkout"} className="btn-org btn-lg w-full flex gap-2 items-center justify-center">
+            <Link
+              to={"/checkout"}
+              className="btn-org btn-lg w-full flex gap-2 items-center justify-center"
+            >
               <IoBagCheckOutline className="text-[20px]" />
               Checkout
             </Link>

@@ -48,7 +48,9 @@ function MyAccount() {
               <br />
               <div className="flex items-center gap-4">
                 <Button className="btn-org btn-lg w-[100px]">Save</Button>
-                <Button className="btn-org btn-lg w-[100px] btn-border">Cancel</Button>
+                <Button className="btn-org btn-lg w-[100px] btn-border">
+                  Cancel
+                </Button>
               </div>
             </form>
           </div>

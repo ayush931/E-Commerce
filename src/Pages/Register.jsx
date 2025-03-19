@@ -17,7 +17,7 @@ function Register() {
             Register with a new account
           </h3>
           <form className="w-full mt-5 mb-3">
-          <div className="form-group w-full mb-5">
+            <div className="form-group w-full mb-5">
               <TextField
                 id="outlined-basic"
                 label="Full Name"
@@ -69,9 +69,22 @@ function Register() {
             <div className="flex items-center w-full mt-3 mb-3">
               <Button className="btn-org w-full btn-lg">Register</Button>
             </div>
-            <p className="text-center mt-4">Already have an account? <Link className="link text-[14px] font-[600] text-primary" to={"/login"}>Login</Link></p>
-            <p className="text-center font-[500] mb-4 mt-3">Continue with social account</p>
-            <Button className="flex gap-3 !capitalize w-full !bg-[#f1f1f1] btn-lg !text-black"><FcGoogle className="text-[20px]" />Register with Google</Button>
+            <p className="text-center mt-4">
+              Already have an account?{" "}
+              <Link
+                className="link text-[14px] font-[600] text-primary"
+                to={"/login"}
+              >
+                Login
+              </Link>
+            </p>
+            <p className="text-center font-[500] mb-4 mt-3">
+              Continue with social account
+            </p>
+            <Button className="flex gap-3 !capitalize w-full !bg-[#f1f1f1] btn-lg !text-black">
+              <FcGoogle className="text-[20px]" />
+              Register with Google
+            </Button>
           </form>
         </div>
       </div>

@@ -8,7 +8,7 @@ import { FcGoogle } from "react-icons/fc";
 import { MyContext } from "../App";
 
 function Login() {
-  const context = useContext(MyContext)
+  const context = useContext(MyContext);
   const [isShowPassword, setIsShowPassword] = useState(false);
 
   return (
@@ -54,7 +54,7 @@ function Login() {
             <Link
               to={"/verify"}
               className="link cursor-pointer text-[14px] font-[600]"
-              onClick={() => context.openAlertBox("success", 'Verify OTP')}
+              onClick={() => context.openAlertBox("success", "Verify OTP")}
             >
               Forgot Password?
             </Link>

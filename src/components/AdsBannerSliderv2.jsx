@@ -7,7 +7,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import BannerBoxv2 from "./BannerBoxv2";
-import PropTypes from 'prop-types'
+import PropTypes from "prop-types";
 
 function AdsBannerSliderv2(props) {
   return (
