@@ -3,6 +3,7 @@ import { useState } from "react";
 import { GoTriangleDown } from "react-icons/go";
 import { IoIosClose } from "react-icons/io";
 import { Link } from "react-router-dom";
+import PropTypes from "prop-types";
 
 function CartItems(props) {
   const [sizeAnchorElement, setSizeAnchorElement] = useState(null);
@@ -111,5 +112,9 @@ function CartItems(props) {
       </div>
   );
 }
+CartItems.propTypes = {
+  size: PropTypes.string.isRequired,
+  quantity: PropTypes.number.isRequired,
+};
 
 export default CartItems;

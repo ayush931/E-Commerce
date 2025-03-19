@@ -1,4 +1,3 @@
-import { Button } from "@mui/material";
 import { IoBagCheckOutline } from "react-icons/io5";
 import CartItems from "../components/CartItems";
 import { Link } from "react-router-dom";

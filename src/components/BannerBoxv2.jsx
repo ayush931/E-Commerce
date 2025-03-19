@@ -1,4 +1,5 @@
 import "./bannerBoxv2.css";
+import PropTypes from "prop-types";
 
 function BannerBoxv2(props) {
   return (
@@ -18,5 +19,8 @@ function BannerBoxv2(props) {
     </div>
   );
 }
+BannerBoxv2.propTypes = {
+  image: PropTypes.string.isRequired,
+};
 
 export default BannerBoxv2;

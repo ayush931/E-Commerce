@@ -1,3 +1,5 @@
+import PropTypes from 'prop-types';
+
 function BannerBox({ img }) {
   return (
     <div className="bannerBox inline-block group">
@@ -9,5 +11,9 @@ function BannerBox({ img }) {
     </div>
   );
 }
+
+BannerBox.propTypes = {
+  img: PropTypes.string.isRequired,
+};
 
 export default BannerBox;

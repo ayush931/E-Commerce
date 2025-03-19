@@ -7,6 +7,7 @@ import "swiper/css/navigation";
 import { Navigation, Autoplay } from "swiper/modules";
 import { Link } from "react-router-dom";
 import BannerBox from "./BannerBox";
+import PropTypes from 'prop-types';
 
 function AdsBannerSlider(props) {
   return (
@@ -117,5 +118,9 @@ function AdsBannerSlider(props) {
     </div>
   );
 }
+
+AdsBannerSlider.propTypes = {
+  items: PropTypes.number.isRequired,
+};
 
 export default AdsBannerSlider;

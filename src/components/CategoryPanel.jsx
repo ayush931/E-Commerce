@@ -1,6 +1,7 @@
 import Box from "@mui/material/Box";
 import Drawer from "@mui/material/Drawer";
 import { IoClose } from "react-icons/io5";
+import PropTypes from "prop-types";
 
 import "./categoryPanel.css";
 
@@ -33,5 +34,9 @@ function CategoryPanel({ isOpenCategoryPanel, setIsOpenCategoryPanel }) {
     </div>
   );
 }
+CategoryPanel.propTypes = {
+  isOpenCategoryPanel: PropTypes.bool.isRequired,
+  setIsOpenCategoryPanel: PropTypes.func.isRequired,
+};
 
 export default CategoryPanel;

@@ -26,6 +26,7 @@ import Verify from "./Pages/Verify";
 import ForgotPassword from "./Pages/ForgotPassword";
 import Checkout from "./Pages/Checkout";
 import MyAccount from "./Pages/MyAccount";
+import MyList from "./Pages/MyList";
 
 const MyContext = createContext();
 
@@ -36,8 +37,8 @@ const Transition = React.forwardRef(function Transition(props, ref) {
 function App() {
   const [openCartPanel, setOpenCartPanel] = useState(false);
   const [openProductDetailsModal, setOpenProductDetailsModal] = useState(false);
-  const [maxWidth, setMaxWidth] = useState("xl");
-  const [fullWidth, setFullWidth] = useState(true);
+  const [maxWidth] = useState("xl");
+  const [fullWidth] = useState(true);
   const [isLogin, setIsLogin] = useState(true);
 
   const toggleCartPanel = (newOpen) => () => {
@@ -63,7 +64,7 @@ function App() {
     openCartPanel,
     openAlertBox,
     isLogin,
-    setIsLogin
+    setIsLogin,
   };
 
   return (
@@ -94,6 +95,7 @@ function App() {
             />
             <Route path={"/checkout"} exact={true} element={<Checkout />} />
             <Route path={"/myAccount"} exact={true} element={<MyAccount />} />
+            <Route path={"/myList"} exact={true} element={<MyList />} />
           </Routes>
           <FooterBanner />
           <Footer />

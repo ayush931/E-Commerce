@@ -6,6 +6,7 @@ import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
 import ProductItem from "./ProductItem";
+import PropTypes from "prop-types";
 
 function ProductSlider(props) {
   return (
@@ -63,5 +64,8 @@ function ProductSlider(props) {
     </div>
   );
 }
+ProductSlider.propTypes = {
+  items: PropTypes.number.isRequired,
+};
 
 export default ProductSlider;

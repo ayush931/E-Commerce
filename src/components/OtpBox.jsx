@@ -1,4 +1,5 @@
 import { useState } from "react";
+import PropTypes from "prop-types";
 
 function OtpBox({ length, onChange }) {
   const [otp, setOtp] = useState(new Array(length).fill(""));
@@ -48,5 +49,9 @@ function OtpBox({ length, onChange }) {
     </div>
   );
 }
+OtpBox.propTypes = {
+  length: PropTypes.number.isRequired,
+  onChange: PropTypes.func.isRequired,
+};
 
 export default OtpBox;
