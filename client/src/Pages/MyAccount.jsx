@@ -1,6 +1,6 @@
 import { Button } from "@mui/material";
 import TextField from "@mui/material/TextField";
-import AccountSideBar from "../components/AccountSideBar";
+import AccountSideBar from "../Components/AccountSideBar";
 
 function MyAccount() {
   return (

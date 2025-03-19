@@ -5,7 +5,7 @@ import { Link } from "react-router-dom";
 import { IoRocketOutline } from "react-icons/io5";
 import CategoryPanel from "./CategoryPanel";
 import { useState } from "react";
-import "../components/navBar.css";
+import "../Components/navBar.css";
 
 function Navigation() {
   const [isOpenCategoryPanel, setIsOpenCategoryPanel] = useState(false);

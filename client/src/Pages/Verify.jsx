@@ -1,5 +1,5 @@
 import { useContext, useState } from "react";
-import OtpBox from "../components/OtpBox";
+import OtpBox from "../Components/OtpBox";
 import { Button } from "@mui/material";
 import { MyContext } from "../App";
 

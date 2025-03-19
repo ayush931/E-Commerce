@@ -1,12 +1,12 @@
-import AdsBannerSlider from "../components/AdsBannerSlider";
-import HomeCategorySlider from "../components/HomeCategorySlider";
-import HomeSlider from "../components/HomeSlider";
+import AdsBannerSlider from "../Components/AdsBannerSlider";
+import HomeCategorySlider from "../Components/HomeCategorySlider";
+import HomeSlider from "../Components/HomeSlider";
 import { TbTruckDelivery } from "react-icons/tb";
 
 import Tabs from "@mui/material/Tabs";
 import Tab from "@mui/material/Tab";
 import { useState } from "react";
-import ProductSlider from "../components/ProductSlider";
+import ProductSlider from "../Components/ProductSlider";
 import { Swiper, SwiperSlide } from "swiper/react";
 
 // Import Swiper styles
@@ -14,10 +14,10 @@ import "swiper/css";
 import "swiper/css/navigation";
 
 import { Navigation } from "swiper/modules";
-import Blogitem from "../components/BlogItem";
-import HomeSliderv2 from "../components/HomeSliderv2";
-import BannerBoxv2 from "../components/BannerBoxv2";
-import AdsBannerSliderv2 from "../components/AdsBannerSliderv2";
+import Blogitem from "../Components/BlogItem";
+import HomeSliderv2 from "../Components/HomeSliderv2";
+import BannerBoxv2 from "../Components/BannerBoxv2";
+import AdsBannerSliderv2 from "../Components/AdsBannerSliderv2";
 
 function Home() {
   const [value, setValue] = useState(0);
