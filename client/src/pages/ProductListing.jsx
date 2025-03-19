@@ -1,15 +1,15 @@
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import Link from "@mui/material/Link";
 import Pagination from "@mui/material/Pagination";
-import SideBar from "../Components/SideBar";
-import ProductItem from "../Components/ProductItem";
+import SideBar from "../components/SideBar";
+import ProductItem from "../components/ProductItem";
 import { Button } from "@mui/material";
 import { IoGrid } from "react-icons/io5";
 import { RiMenuFill } from "react-icons/ri";
 import Menu from "@mui/material/Menu";
 import MenuItem from "@mui/material/MenuItem";
 import { useState } from "react";
-import ProductItemListView from "../Components/ProductItemListView";
+import ProductItemListView from "../components/ProductItemListView";
 
 function ProductListing() {
   const [itemView, setItemView] = useState("grid");

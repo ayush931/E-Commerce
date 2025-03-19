@@ -1,12 +1,12 @@
 import Breadcrumbs from "@mui/material/Breadcrumbs";
 import { Link } from "react-router-dom";
-import ProductZoom from "../Components/ProductZoom";
+import ProductZoom from "../components/ProductZoom";
 import Rating from "@mui/material/Rating";
 import { Button } from "@mui/material";
 import { useState } from "react";
 import TextField from "@mui/material/TextField";
-import ProductSlider from "../Components/ProductSlider";
-import ProductDetailsComponent from "../Components/ProductDetailsComponent";
+import ProductSlider from "../components/ProductSlider";
+import ProductDetailsComponent from "../components/ProductDetailsComponent";
 
 function ProductDetails() {
   const [activeTab, setActiveTab] = useState(0);

@@ -1,5 +1,5 @@
-import AccountSideBar from "../Components/AccountSideBar";
-import MyListItems from "../Components/MyListItems";
+import AccountSideBar from "../components/AccountSideBar";
+import MyListItems from "../components/MyListItems";
 
 function MyList() {
   return (

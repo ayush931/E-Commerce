@@ -1,6 +1,6 @@
 import { IoBagCheckOutline } from "react-icons/io5";
 import { Link } from "react-router-dom";
-import CartItems from "../Components/CartItems";
+import CartItems from "../components/CartItems";
 
 function CartPage() {
   return (

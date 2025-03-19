@@ -1,7 +1,7 @@
 import { Button } from "@mui/material";
-import AccountSideBar from "../Components/AccountSideBar";
+import AccountSideBar from "../components/AccountSideBar";
 import { FaAngleDown } from "react-icons/fa";
-import Badge from "../Components/Badge";
+import Badge from "../components/Badge";
 import { useState } from "react";
 import { FaAngleUp } from "react-icons/fa";
 
