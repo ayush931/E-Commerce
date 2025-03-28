@@ -87,3 +87,45 @@ export async function registerUserController(req, res) {
     });
   }
 }
+
+export async function verifyEmailController(req, res) {
+  const { email, otp } = req.body;
+  const user = await UserModel.findOne({ email });
+
+  if (!user) {
+    return res.status(400).json({
+      error: true,
+      success: false,
+      message: "User not found"
+    })
+  }
+
+  const isOtpValid = user.otp == otp;
+  const isNotExpired = user.otpExpiry > Date.now();
+
+  if (isOtpValid && isNotExpired) {
+    user.verifyEmail = true;
+    user.otp = null;
+    user.otpExpiry = null
+    await user.save()
+    return res.status(200).json({
+      success: true,
+      error: false,
+      message: "Email verified successfully"
+    })
+  }
+  else if (!isOtpValid) {
+    return res.status(400).json({
+      error: true,
+      success: false,
+      message: "Invalid otp"
+    })
+  }
+  else {
+    return res.json(400).json({
+      error: true,
+      success: false,
+      messsage: "OTP expires"
+    })
+  }
+}
