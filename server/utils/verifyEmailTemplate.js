@@ -1,4 +1,4 @@
-const verificationEmail = (name, verifyCode) => {
+const verifyEmailTemplate = (name, verifyCode) => {
   return `<!DOCTYPE html>
 <html lang="en">
   <head>
@@ -83,4 +83,4 @@ const verificationEmail = (name, verifyCode) => {
 </html>`;
 };
 
-export default verificationEmail;
+export default verifyEmailTemplate;

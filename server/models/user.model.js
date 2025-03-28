@@ -22,6 +22,10 @@ const userSchema = mongoose.Schema(
       type: Number,
       default: null,
     },
+    accessToken: {
+      type: String,
+      default: "",
+    },
     refreshToken: {
       type: String,
       default: "",
@@ -31,10 +35,10 @@ const userSchema = mongoose.Schema(
       default: false,
     },
     otp: {
-      type: String
+      type: String,
     },
     otpExpiry: {
-      type: Date
+      type: Date,
     },
     lastLoginDate: {
       type: Date,
