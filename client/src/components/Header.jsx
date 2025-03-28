@@ -90,7 +90,7 @@ function Header() {
           <div className="col3 w-[35%] flex items-center pl-7">
             <ul className="flex items-center gap-3 justify-end w-full">
               {context.isLogin === false ? (
-                <li className="list-none">
+                <li className="list-none mr-6">
                   <Link
                     to={"/login"}
                     className="link transition text-[15px] font-[500]"
