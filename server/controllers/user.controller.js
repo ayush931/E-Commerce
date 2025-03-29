@@ -520,10 +520,11 @@ export async function resetPasswordController(req, res) {
   const { email, newPassword, confirmPassword } = req.body;
   if (!email || !newPassword || !confirmPassword) {
     return res.status(400).json({
-      message: "Please provide required fields email, password, confirmpassword",
+      message:
+        "Please provide required fields email, password, confirmpassword",
       success: false,
-      error: true
-    })
+      error: true,
+    });
   }
 
   const user = await UserModel.findOne({ email });
@@ -531,82 +532,88 @@ export async function resetPasswordController(req, res) {
     return res.status(400).json({
       message: "Email is not available",
       error: true,
-      success: false
-    })
+      success: false,
+    });
   }
 
   if (newPassword !== confirmPassword) {
     return res.status(400).json({
       message: "New Password and Confirm Password should be same",
       error: true,
-      success: false
-    })
+      success: false,
+    });
   }
 
   const salt = await bcryptjs.genSalt(10);
-  const hashPassword = await bcryptjs.hash(newPassword, salt)
+  const hashPassword = await bcryptjs.hash(newPassword, salt);
 
   const update = await UserModel.findByIdAndUpdate(user._id, {
-    password: hashPassword
-  })
+    password: hashPassword,
+  });
 
   return res.status(201).json({
     message: "Password updated successfully",
     error: false,
     success: true,
-    update
-  })
+    update,
+  });
 }
 
 export async function refreshTokenController(req, res) {
-  const refreshToken = req.cookies.refreshToken || req?.headers?.authorization?.split(" ")[1]
+  const refreshToken =
+    req.cookies.refreshToken || req?.headers?.authorization?.split(" ")[1];
 
   if (!refreshToken) {
     return res.status(401).json({
       message: "Invalid token",
       error: true,
-      success: false
-    })
+      success: false,
+    });
   }
 
-  const verifyToken = await jwt.verify(refreshToken, process.env.REFRESH_TOKEN_PASSWORD)
+  const verifyToken = await jwt.verify(
+    refreshToken,
+    process.env.REFRESH_TOKEN_PASSWORD
+  );
   if (!verifyToken) {
     return res.status(401).json({
       message: "Token is expired",
       error: true,
-      success: false
-    })
+      success: false,
+    });
   }
 
-  const userId = verifyToken?._id
+  const userId = verifyToken?._id;
   const newAccessToken = await generateAccessToken(userId);
 
   const cookiesOption = {
     httpOnly: true,
     secure: true,
-    sameSite: "None"
-  }
+    sameSite: "None",
+  };
 
-  res.cookie("accessToken", newAccessToken, cookiesOption)
+  res.cookie("accessToken", newAccessToken, cookiesOption);
 
   return res.status(201).json({
     message: "New access token generated",
     error: false,
     success: true,
     data: {
-      accessToken: newAccessToken
-    }
-  })
+      accessToken: newAccessToken,
+    },
+  });
 }
 
 export async function userDetailsController(req, res) {
-  const userId = req.userId
-  const user = await UserModel.findById(userId).select("-password -refreshToken")
+  const userId = req.userId;
+  const user = await UserModel.findById(userId).select(
+    "-password -refreshToken"
+  );
 
   return res.status(201).json({
     message: "User details",
     error: false,
     success: true,
-    user
-  })
+    user,
+  });
 }
